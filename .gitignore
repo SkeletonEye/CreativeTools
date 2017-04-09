@@ -1,0 +1,17 @@
+# .gitignore
+
+# Maven
+api/target
+runtime/server
+runtime/target
+tools/server
+tools/target
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# macOS
+.DS_STORE
+

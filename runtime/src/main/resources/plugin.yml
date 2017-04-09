@@ -1,0 +1,5 @@
+name: CreativeRuntime
+version: {version}
+author: SkeletonEye
+
+main: de.skeletoneye.creative.runtime.CreativeRuntime

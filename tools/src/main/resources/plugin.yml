@@ -1,0 +1,5 @@
+name: CreativeTools
+version: {version}
+author: SkeletonEye
+
+main: de.skeletoneye.creative.tools.CreativeTools

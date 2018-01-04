@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>de.skeletoneye</groupId>
-    <artifactId>creativeparent</artifactId>
+    <groupId>de.skeletoneye.spigot</groupId>
+    <artifactId>creative-parent</artifactId>
     <version>0.1.0-SNAPSHOT</version>
   </parent>
 
   <name>CreativeAPI</name>
-  <artifactId>creativeapi</artifactId>
+  <artifactId>creative-api</artifactId>
   <packaging>jar</packaging>
 
   <build>
@@ -18,7 +18,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.4</version>
+        <version>${plugin.javadoc.version}</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -30,11 +30,35 @@
           </execution>
         </executions>
         <configuration>
+          <!-- Prevents failing builds because of uncompleted JavaDoc -->
+          <additionalparam>-Xdoclint:none</additionalparam>
+          <!-- A better title. -->
+          <doctitle>CreativeTools API ${project.version}</doctitle>
+          <!-- Links to Javadoc for third-party APIs -->
           <links>
             <link>https://hub.spigotmc.org/javadocs/spigot/</link>
           </links>
-          <!-- Prevents failing builds because of uncompleted JavaDoc -->
-          <additionalparam>-Xdoclint:none</additionalparam>
+          <!-- Makes lombok-generated methods show up (@see lombok-maven-plugin) -->
+          <sourcepath>${basedir}/target/generated-sources/delombok</sourcepath>
+        </configuration>
+      </plugin>
+      <!-- lombok-maven-plugin -->
+      <plugin>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok-maven-plugin</artifactId>
+        <version>${plugin.lombok.version}</version>
+        <executions>
+          <execution>
+            <id>delombok</id>
+            <!-- Should happen after package, but before verify -->
+            <phase>post-integration-test</phase>
+            <goals>
+              <goal>delombok</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
         </configuration>
       </plugin>
     </plugins>

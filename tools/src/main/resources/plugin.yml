@@ -1,5 +1,7 @@
-name: CreativeTools
-version: {version}
+name: ${project.name}Plugin
+prefix: ${project.name}
+
+version: ${project.version}
 author: SkeletonEye
 
 main: de.skeletoneye.creative.tools.CreativeTools

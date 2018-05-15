@@ -12,6 +12,10 @@ tools/target
 .classpath
 .project
 
+# IntelliJ
+.idea/
+*.iml
+
 # macOS
 .DS_STORE
 

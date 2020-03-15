@@ -1,5 +1,8 @@
 # .gitignore
 
+# Spigot Buildtools
+/buildtools/
+
 # Maven
 api/target
 runtime/server

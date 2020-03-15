@@ -6,6 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * @author Charles Müller
+ */
 @AllArgsConstructor
 @Getter
 public abstract class DataObject

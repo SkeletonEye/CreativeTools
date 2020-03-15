@@ -6,6 +6,9 @@ import org.bukkit.entity.Entity;
 
 import lombok.Getter;
 
+/**
+ * @author Charles Müller
+ */
 @Getter
 public class EntityLocation extends DataObject
 {

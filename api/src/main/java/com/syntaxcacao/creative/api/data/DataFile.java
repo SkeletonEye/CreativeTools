@@ -19,6 +19,9 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.AllArgsConstructor;
 
+/**
+ * @author Charles Müller
+ */
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class DataFile<T extends DataObject>
 {

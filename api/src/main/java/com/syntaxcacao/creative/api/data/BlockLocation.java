@@ -11,6 +11,9 @@ import org.bukkit.entity.Player;
 
 import lombok.Getter;
 
+/**
+ * @author Charles Müller
+ */
 @Getter
 public class BlockLocation extends DataObject
 {

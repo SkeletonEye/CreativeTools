@@ -1,4 +1,4 @@
-package de.skeletoneye.creative.tools;
+package com.syntaxcacao.creative.tools;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -2,6 +2,6 @@ name: ${project.name}Plugin
 prefix: ${project.name}
 
 version: ${project.version}
-author: SkeletonEye
+author: SyntaxCacao
 
-main: de.skeletoneye.creative.runtime.CreativeRuntime
+main: com.syntaxcacao.creative.runtime.CreativeRuntime

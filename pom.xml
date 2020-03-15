@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>de.skeletoneye.spigot</groupId>
-  <artifactId>creative-parent</artifactId>
+  <groupId>com.syntaxcacao.spigot</groupId>
+  <artifactId>creativeparent</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>CreativeParent</name>
-  <url>https://www.github.com/SkeletonEye/CreativeTools</url>
+  <url>https://www.github.com/SyntaxCacao/CreativeTools</url>
 
   <modules>
     <module>api</module>
@@ -21,13 +21,13 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <dependency.lombok.version>1.16.18</dependency.lombok.version>
-    <dependency.spigot.version>1.12.2-R0.1-SNAPSHOT</dependency.spigot.version>
-    <plugin.assembly.version>3.1.0</plugin.assembly.version>
-    <plugin.dependency.version>3.0.2</plugin.dependency.version>
-    <plugin.install.version>2.5.2</plugin.install.version>
-    <plugin.javadoc.version>3.0.0</plugin.javadoc.version>
-    <plugin.lombok.version>1.16.18.1</plugin.lombok.version>
+    <dependency.lombok.version>1.18.12</dependency.lombok.version>
+    <dependency.spigot.version>1.15.2-R0.1-SNAPSHOT</dependency.spigot.version>
+    <plugin.assembly.version>3.2.0</plugin.assembly.version>
+    <plugin.dependency.version>3.1.2</plugin.dependency.version>
+    <plugin.install.version>3.0.0-M1</plugin.install.version>
+    <plugin.javadoc.version>3.1.1</plugin.javadoc.version>
+    <plugin.lombok.version>1.18.12.0</plugin.lombok.version>
   </properties>
 
   <repositories>
@@ -41,15 +41,15 @@
     <!-- Spigot API -->
     <dependency>
       <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>1.8.8-R0.1-SNAPSHOT</version>
+      <artifactId>spigot</artifactId>
+      <version>${dependency.spigot.version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- Lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.16.16</version>
+      <version>${dependency.lombok.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

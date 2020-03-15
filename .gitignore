@@ -4,11 +4,11 @@
 /buildtools/
 
 # Maven
-api/target
-runtime/server
-runtime/target
-tools/server
-tools/target
+/api/target/
+/runtime/server/
+/runtime/target/
+/tools/server/
+/tools/target/
 
 # Eclipse
 .settings/
@@ -21,4 +21,3 @@ tools/target
 
 # macOS
 .DS_STORE
-
